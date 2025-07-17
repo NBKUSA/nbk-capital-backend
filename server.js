@@ -16,5 +16,5 @@ app.post('/api/pay', (req, res) => {
   res.status(400).json({ error: 'Invalid input' });
 });
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Backend running on port ${PORT}`));
