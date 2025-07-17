@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: lloyds-morgan-backend
+    env: node
+    plan: free
+    repo: https://github.com/your-username/lloyds-morgan-backend
+    branch: main
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: ISO_HOST
+        value: 127.0.0.1
+      - key: ISO_PORT
+        value: 5001
+      - key: TRON_NODE
+        value: https://api.trongrid.io
+      - key: TRON_PRIVATE_KEY
+        sync: false
+      - key: TRON_WALLET
+        sync: false
