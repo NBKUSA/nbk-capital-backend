@@ -15,6 +15,7 @@ app.post('/api/pay', (req, res) => {
   }
   res.status(400).json({ error: 'Invalid input' });
 });
+app.get('/', (req, res) => res.send('Nbk Capital Backend Running'));
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Backend running on port ${PORT}`));
