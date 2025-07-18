@@ -1,9 +1,9 @@
 services:
   - type: web
-    name: lloyds-morgan-backend
+    name: nbk-capital-backend
     env: node
     plan: free
-    repo: https://github.com/your-username/lloyds-morgan-backend
+    repo: https://github.com/your-username/nbk-capital-backend
     branch: main
     buildCommand: npm install
     startCommand: npm start
